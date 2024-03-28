@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="register-container">
+
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1>Seja bem-vindo</h1>
+            </div>
+        </div>
+
+        <div id="register-form">
+            <h2>Create your account:</h2>
+            <p>Register to use our system's services</p>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Type your name">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Type your email">
+
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" placeholder="Type a password">
+
+                <p>
+                    Need help to create a safe password? 
+                    <span id="open-generate-password">Click here</span>
+                </p>
+
+                <div id="generate-options" class="hide">
+                    <p>Select your preferences</p>
+                    <div class="form-control">
+                        <label for="length">Number of characters:</label>
+                        <input type="text" name="length" id="length" value="10">
+                    </div>
+                    <div class="form-control">
+                        <label for="letters">Letters:</label>
+                        <input type="checkbox" name="letters" id="letters" checked>
+                    </div>
+                    <div class="form-control">
+                        <label for="length">Numbers:</label>
+                        <input type="checkbox" name="numbers" id="numbers" checked>
+                    </div>
+                    <div class="form-control">
+                        <label for="length">Symbols:</label>
+                        <input type="checkbox" name="symbols" id="symbols" checked>
+                    </div>
+
+                    <button id="generate-password">Create password</button>
+                </div>
+
+                <div id="generated-password" class="hide">
+                    <p>Here's your password</p>
+                    <h4></h4>
+                    <button id="copy-password">Copy</button>
+                </div>
+
+                <div class="form-control">
+                    <label for="confirmpassword">Confirm your password</label>
+                    <input
+                      type="text"
+                      type="confirmpassword"
+                      id="confirmpassword"
+                      placeholder="Confirme your password"
+                    />
+                  </div>
+            </div>
+            <input type="submit" value="Register" />
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
