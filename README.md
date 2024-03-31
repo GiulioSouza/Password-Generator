@@ -6,4 +6,4 @@ I decided to bring it here because I thought it was innovative and different fro
 
 - [x] Complete the first stage of the project
 - [ ] Create Night Mode
-- [ ] Make Responsive
+- [x] Make Responsive
