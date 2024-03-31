@@ -46,9 +46,7 @@ input:focus {
 
 #register-banner h1 {
     font-size: 3.5rem;
-    margin-bottom: 1.5rem;
     color: #fff;
-    word-spacing: 50rem;
 }
 
 #register-form {
@@ -188,5 +186,14 @@ input:focus {
     #register-banner,
     #register-form{
         width: 90%;
+    }
+
+    #register-banner #banner-layer{
+        justify-content: center;
+    }
+
+    #register-banner #banner-layer h1{
+        font-size: 3rem;
+
     }
 }
